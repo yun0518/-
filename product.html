@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品詳請 - GIRL'S FASHION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>GIRL'S FASHION</h1>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="product.html">PRODUCT</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="search-icon"><img src="https://shinnnnnn.sirv.com/%E6%88%AA%E5%9C%96%202024-10-16%20%E4%B8%8B%E5%8D%883.03.31.png" alt=""></a>
+            <a href="#" class="user-icon"><img src="https://shinnnnnn.sirv.com/%E6%88%AA%E5%9C%96%202024-10-16%20%E4%B8%8B%E5%8D%883.03.57.png" alt=""></a>
+            <a href="cart.html" class="cart-icon"><img src="https://shinnnnnn.sirv.com/%E6%88%AA%E5%9C%96%202024-10-16%20%E4%B8%8B%E5%8D%883.13.10.png" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="home.html">首頁</a>
+            <span>&gt;</span>
+            <a href="#">所有商品</a>
+            <span>&gt;</span>
+            <span class="active">細肩帶背心</span>
+        </div>
+
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="images/p1.jpg" alt="細肩帶背心">
+            </div>
+            <div class="product-info">
+                <h2>細肩帶背心</h2>
+                <p class="price">NT$ 450</p>
+                <div class="size">
+                    <label for="size-select">尺寸：</label>
+                    <select id="size-select">
+                        <option value="f">F</option>
+                    </select>
+                </div>
+                <div class="color">
+                    <p>顏色：</p>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="black">黑色</button>
+                        <button class="color-btn" data-color="white">白色</button>
+                        <button class="color-btn" data-color="gray">灰色</button>
+                        <button class="color-btn" data-color="coffee">咖啡</button>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <label for="quantity-input">數量：</label>
+                    <div class="qty-selector">
+                        <button class="qty-btn" id="decrease">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1">
+                        <button class="qty-btn" id="increase">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart">加入購物車</button>
+            </div>
+        </div>
+    </main>
+   
+
+    <!-- 聊天對話框 -->
+    <div id="chat-container" class="chat-container" style="display: none;">
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="輸入您的訊息...">
+            <button id="send-button">發送</button>
+        </div>
+    </div>
+
+    <!-- 聊天按鈕 -->
+    <a href="#" class="chat-button" id="chat-toggle">
+        <img src="images/aichatbot.jpg" alt="AI chatbot">
+    </a>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
